@@ -4,8 +4,8 @@
 const { gatherTelemetryForUrl, analyzeEmberObject } = require('ember-codemods-telemetry-helpers');
 
 (async () => {
-  console.log('test');
-  await gatherTelemetryForUrl(process.argv[2], analyzeEmberObject, { timeout: 60000, devtools: true });
+  debugger;
+  await gatherTelemetryForUrl(process.argv[2], analyzeEmberObject, { timeout: 60000 });
 
   require('codemod-cli').runTransform(
     __dirname,
