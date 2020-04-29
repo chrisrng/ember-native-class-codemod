@@ -3,4 +3,4 @@
 
 const { gatherTelemetry, analyzeEmberObject } = require('ember-codemods-telemetry-helpers');
 
-gatherTelemetry(process.argv[2], analyzeEmberObject);
+gatherTelemetry(process.argv[2], analyzeEmberObject, { timeout: 60000 } );
